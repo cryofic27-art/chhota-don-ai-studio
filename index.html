@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chhota Don AI Studio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">🎬 <span>Chhota Don</span> AI Studio</div>
+  <button class="top-btn" onclick="document.getElementById('upload').scrollIntoView({behavior:'smooth'})">Create Video</button>
+</header>
+
+<main>
+<section class="hero">
+  <div class="badge">✨ ORIGINAL CONTENT WORKFLOW</div>
+  <h1>Turn your video idea into a <span>fresh new video.</span></h1>
+  <p>Upload a video you own or have permission to use. Get a new script, voice-over plan and editing workflow.</p>
+  <div class="hero-actions">
+    <button class="primary" onclick="document.getElementById('fileInput').click()">🚀 Upload Video</button>
+    <button class="secondary" onclick="document.getElementById('how').scrollIntoView({behavior:'smooth'})">How it works</button>
+  </div>
+</section>
+
+<section id="upload" class="card">
+  <div class="section-title">
+    <h2>Upload your video</h2>
+    <p>Use only videos you own or are licensed/authorized to transform.</p>
+  </div>
+  <input id="fileInput" type="file" accept="video/*" hidden>
+  <label for="fileInput" class="dropzone" id="dropzone">
+    <div class="upload-icon">⬆</div>
+    <h3>Choose a video</h3>
+    <p>MP4, MOV, WebM • Demo limit: 100 MB</p>
+    <span class="browse">Browse files</span>
+  </label>
+
+  <div id="fileInfo" class="file-info hidden"></div>
+
+  <div class="options">
+    <label><input type="checkbox" id="script" checked> Create an original script</label>
+    <label><input type="checkbox" id="voice" checked> Plan a new voice-over</label>
+    <label><input type="checkbox" id="visuals" checked> Suggest new visuals/scenes</label>
+  </div>
+
+  <button id="startBtn" class="primary full" disabled>✨ Create New Version</button>
+  <div id="status" class="status hidden"></div>
+</section>
+
+<section id="how" class="features">
+  <div class="feature"><b>01</b><h3>Analyze</h3><p>Identify the video's structure and key ideas.</p></div>
+  <div class="feature"><b>02</b><h3>Re-create</h3><p>Generate an original script, narration plan and visual directions.</p></div>
+  <div class="feature"><b>03</b><h3>Export</h3><p>Connect a real video-rendering service to produce the final file.</p></div>
+</section>
+
+<section class="notice">
+  <strong>⚠️ Copyright note</strong>
+  <p>This demo does not make someone else's copyrighted video “copyright-free”. Permission/licensing is still required. Changing speed, cropping, mirroring or adding text does not automatically remove copyright.</p>
+</section>
+</main>
+
+<footer>© 2026 Chhota Don AI Studio • Original-content creation tool</footer>
+<script src="script.js"></script>
+</body>
+</html>
